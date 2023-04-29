@@ -1,10 +1,28 @@
 package org.yup.accountingledger;
-
+import java.util.Scanner;
 public class AccountingLedgerApp {
 
     public static void main(String[] args){
 
-        //ledger method goes here
+        public static String ledger(){
+
+        Scanner input = new Scanner(System.in);
+
+        boolean appRunning = true;
+
+        while(appRunning) {
+
+            String ledgerChoice =
+
+            switch(ledgerChoice) {
+                case
+
+                }
+            }
+        }
+    }
+}
+
         //Ledger - All entries should show the newest entries first
         // A) All - Display all entries
         // D) Deposits - Display only the entries that are deposits into the account
@@ -18,5 +36,5 @@ public class AccountingLedgerApp {
         //  0) Back - go back to the report page
         // H) Home - go back to the home page
 
-    }
-}
+
+
