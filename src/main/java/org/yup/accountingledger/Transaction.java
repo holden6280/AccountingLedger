@@ -26,6 +26,17 @@ public class Transaction {
             this.isDebit = isDebit;
         }
 
+        /*
+    note time and date
+    prompt the user for the desc
+    the vendor string
+    the amount
+    set boolean isDebit to false
+    format
+    write to transactions.csv
+        */
+
+
     public LocalDate getDate() {
         return date;
     }

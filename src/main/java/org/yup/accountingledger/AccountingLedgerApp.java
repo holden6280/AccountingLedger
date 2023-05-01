@@ -4,7 +4,9 @@ public class AccountingLedgerApp {
 
     public static void main(String[] args){
 
-        public static String ledger(){
+        Screens.homeScreen();
+
+      /*  public static String ledger(){
 
         Scanner input = new Scanner(System.in);
 
@@ -18,8 +20,8 @@ public class AccountingLedgerApp {
                 case
 
             }
-            }
-        }
+            }}
+        */
     }
 }
 

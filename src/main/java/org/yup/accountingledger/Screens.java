@@ -1,5 +1,7 @@
 package org.yup.accountingledger;
 import java.util.Scanner;
+import java.time.LocalDate;
+import java.time.LocalTime;
 public class Screens {
     public static String homeScreen() {
         Scanner input = new Scanner(System.in);
@@ -11,16 +13,23 @@ public class Screens {
         System.out.println("Enter X to exit");
         System.out.println("Please enter your selection:");
 
-        int amount;
-        boolean isDebit;
-        String selection = new Transaction("","",);
 
-        switch(selection){
+        switch(input.nextLine()){
             case "D":
-                Transaction;
+
+                System.out.println("Give me a desc");
+ //               input.nextLine();
                 break;
             case "P":
-                Transaction;
+                /*
+
+                prompt the user for the desc
+                the vendor string
+                the amount
+                set boolean isDebit to true
+                format
+                then write to transactions.csv
+*/
                 break;
             case "L": ;
             break;
