@@ -1,7 +1,7 @@
 package org.yup.accountingledger;
 import java.util.Scanner;
-public class HomeScreen {
-    public static String mainMenu() {
+public class Screens {
+    public static String homeScreen() {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Welcome to your account Ledger.");
@@ -11,19 +11,27 @@ public class HomeScreen {
         System.out.println("Enter X to exit");
         System.out.println("Please enter your selection:");
 
-        String selection = mainMenu();
+        int amount;
+        boolean isDebit;
+        String selection = new Transaction("","",);
 
         switch(selection){
-            case "D":;
+            case "D":
+                Transaction;
                 break;
             case "P":
+                Transaction;
                 break;
-            case "L":;
+            case "L": ;
             break;
-            case "X":;
+            case "X":
+                System.out.println("Thank you, Goodbye!");
             break;
-            default:;
+            default:
+                System.out.println("That is not an acceptable selection. Please try again.");;
         }
+
+        return input.nextLine();
         //The home screen should give the user the following options. The application should continue to run until the user chooses to exit.
         // D) Add Deposit - prompt user for the deposit information and save it to the csv file
         // P) Make Payment (Debit) - prompt user for the debit information and save it to the csv file

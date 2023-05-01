@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83a29dae-7ff1-446d-aaea-584cc6b4e6f3" name="Changes" comment="first commit" />
+    <list default="true" id="83a29dae-7ff1-446d-aaea-584cc6b4e6f3" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yup/accountingledger/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/yup/accountingledger/Debit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/yup/accountingledger/Deposit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/yup/accountingledger/HomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yup/accountingledger/Screens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/transactions.csv" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
