@@ -13,12 +13,23 @@ public class Screens {
         System.out.println("Enter X to exit");
         System.out.println("Please enter your selection:");
 
+        String description;
+        String vendor;
+        int amount;
 
         switch(input.nextLine()){
             case "D":
 
                 System.out.println("Give me a desc");
- //               input.nextLine();
+                description = input.nextLine();
+
+                System.out.println("vendor");
+                vendor = input.nextLine();
+
+                System.out.println("amount");
+                amount = input.nextInt();
+
+                new Transaction(description, vendor, amount,false);
                 break;
             case "P":
                 /*
@@ -30,14 +41,25 @@ public class Screens {
                 format
                 then write to transactions.csv
 */
+
+                System.out.println("Give me a desc");
+                description = input.nextLine();
+
+                System.out.println("vendor");
+                vendor = input.nextLine();
+
+                System.out.println("amount");
+                amount = input.nextInt();
+
+                new Transaction(description, vendor, amount,true);
                 break;
             case "L": ;
             break;
-            case "X":
+            case  "X":
                 System.out.println("Thank you, Goodbye!");
             break;
             default:
-                System.out.println("That is not an acceptable selection. Please try again.");;
+                System.out.println("That is not an acceptable selection. Please try again.");
         }
 
         return input.nextLine();
