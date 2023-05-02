@@ -32,15 +32,15 @@ public class Screens {
                 new Transaction(description, vendor, amount,false);
                 break;
             case "P":
-                /*
 
+                /*
                 prompt the user for the desc
                 the vendor string
                 the amount
                 set boolean isDebit to true
                 format
                 then write to transactions.csv
-*/
+                */
 
                 System.out.println("Give me a desc");
                 description = input.nextLine();
