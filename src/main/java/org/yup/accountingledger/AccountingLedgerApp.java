@@ -6,6 +6,9 @@ public class AccountingLedgerApp {
 
         Screens.homeScreen();
 
+    }
+}
+
       /*  public static String ledger(){
 
         Scanner input = new Scanner(System.in);
@@ -18,12 +21,8 @@ public class AccountingLedgerApp {
 
             switch(ledgerChoice) {
                 case
-
-            }
             }}
         */
-    }
-}
 
         //Ledger - All entries should show the newest entries first
         // A) All - Display all entries
@@ -37,6 +36,3 @@ public class AccountingLedgerApp {
         //  5) Search by Vendor - prompt the user for the vendor name and display all entries for that vendor
         //  0) Back - go back to the report page
         // H) Home - go back to the home page
-
-
-

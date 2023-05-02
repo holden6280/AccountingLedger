@@ -1,4 +1,6 @@
 package org.yup.accountingledger;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -13,51 +15,24 @@ public class Screens {
         System.out.println("Enter X to exit");
         System.out.println("Please enter your selection:");
 
-        String description;
-        String vendor;
-        int amount;
 
         switch(input.nextLine()){
             case "D":
-
-                System.out.println("Give me a desc");
-                description = input.nextLine();
-
-                System.out.println("vendor");
-                vendor = input.nextLine();
-
-                System.out.println("amount");
-                amount = input.nextInt();
-
-                new Transaction(description, vendor, amount,false);
+                addTransaction(false);
                 break;
+
             case "P":
-
-                /*
-                prompt the user for the desc
-                the vendor string
-                the amount
-                set boolean isDebit to true
-                format
-                then write to transactions.csv
-                */
-
-                System.out.println("Give me a desc");
-                description = input.nextLine();
-
-                System.out.println("vendor");
-                vendor = input.nextLine();
-
-                System.out.println("amount");
-                amount = input.nextInt();
-
-                new Transaction(description, vendor, amount,true);
+                addTransaction(true);
                 break;
-            case "L": ;
+
+            case "L":;
+                //opens the ledger app
             break;
+
             case  "X":
                 System.out.println("Thank you, Goodbye!");
             break;
+
             default:
                 System.out.println("That is not an acceptable selection. Please try again.");
         }
@@ -70,5 +45,38 @@ public class Screens {
         // X) Exit - exit the application
 
         //this should contain a system.in switch statement
+    }
+
+    public static void addTransaction(boolean isDebit) {
+
+        Scanner input = new Scanner(System.in);
+        String description;
+        String vendor;
+        float amount;
+
+        System.out.println("Give me a desc");
+        description = input.nextLine();
+
+        System.out.println("vendor");
+        vendor = input.nextLine();
+
+        System.out.println("amount");
+        amount = input.nextFloat();
+
+        Transaction newDebit = new Transaction(description, vendor, amount);
+
+        if(isDebit) {
+            newDebit.amount = newDebit.amount * -1;
+        }
+
+        try {
+            FileWriter writer = new FileWriter("transactions.csv");
+            writer.write(newDebit.getDate().toString() + "," + newDebit.getTime().toString() + "," + description + "," + vendor + "," + amount + ",");
+            String line = String.format("date: %s, time: %s, description: %s, vendor: %s, amount: %.2f", newDebit.getDate(), newDebit.getTime(), newDebit.description, newDebit.vendor, newDebit.amount);
+            writer.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
