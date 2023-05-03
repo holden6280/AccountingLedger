@@ -25,7 +25,6 @@ public class Screens {
                     break;
 
                 case "L":
-                    ;
                     //opens the ledger app
                     break;
 
@@ -36,7 +35,6 @@ public class Screens {
 
                 default:
                     System.out.println("That is not an acceptable selection. Please try again.");
-
             }
         }
     }
@@ -56,15 +54,15 @@ public class Screens {
             System.out.println("amount");
             amount = input.nextFloat();
 
-            Transaction newDebit = new Transaction(description, vendor, amount);
+            Transaction nL = new Transaction(description, vendor, amount);
 
             if (isDebit) {
-                newDebit.amount = newDebit.amount * -1;
+                nL.amount = nL.amount * -1;
             }
 
             try {
                 FileWriter writer = new FileWriter("transactions.csv", true);
-                String line = String.format("%s|%s|%s|%s|%.2f %n", newDebit.getDate(), newDebit.getTime(), newDebit.description, newDebit.vendor, newDebit.amount);
+                String line = String.format("%s|%s|%s|%s|%.2f %n", nL.getDate(), nL.getTime(), nL.description, nL.vendor, nL.amount);
                 writer.write(line);
                 writer.close();
 

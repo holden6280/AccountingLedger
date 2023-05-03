@@ -1,13 +1,9 @@
 package org.yup.accountingledger;
-import java.util.Scanner;
 public class AccountingLedgerApp {
 
     public static void main(String[] args){
 
-        boolean appRunning = true;
-
             Screens.homeScreen();
-
 
     }
 }

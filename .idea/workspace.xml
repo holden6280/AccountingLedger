@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83a29dae-7ff1-446d-aaea-584cc6b4e6f3" name="Changes" comment="Monday afternoon commit 2">
+    <list default="true" id="83a29dae-7ff1-446d-aaea-584cc6b4e6f3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/yup/accountingledger/Ledger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/yup/accountingledger/AccountingLedgerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yup/accountingledger/AccountingLedgerApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/yup/accountingledger/Screens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yup/accountingledger/Screens.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transactions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/transactions.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683133836083</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Monday afternoon commit 2">
+      <created>1683139115706</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683139115706</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
