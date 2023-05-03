@@ -4,7 +4,13 @@ public class AccountingLedgerApp {
 
     public static void main(String[] args){
 
-        Screens.homeScreen();
+        boolean appRunning = true;
+
+        while (appRunning = true){
+            Screens.homeScreen();
+        }
+
+
 
     }
 }

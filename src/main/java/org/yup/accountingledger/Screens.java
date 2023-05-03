@@ -5,16 +5,15 @@ import java.util.Scanner;
 import java.time.LocalDate;
 import java.time.LocalTime;
 public class Screens {
-    public static String homeScreen() {
+    public static void homeScreen() {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Welcome to your account Ledger.");
-        System.out.println("Enter D to make a deposit");
-        System.out.println("Enter P to make a payment");
+        System.out.println("Enter D to record a deposit");
+        System.out.println("Enter P to record a payment");
         System.out.println("Enter L to view the ledger");
         System.out.println("Enter X to exit");
         System.out.println("Please enter your selection:");
-
 
         switch(input.nextLine()){
             case "D":
@@ -35,9 +34,8 @@ public class Screens {
 
             default:
                 System.out.println("That is not an acceptable selection. Please try again.");
-        }
 
-        return input.nextLine();
+        }
         //The home screen should give the user the following options. The application should continue to run until the user chooses to exit.
         // D) Add Deposit - prompt user for the deposit information and save it to the csv file
         // P) Make Payment (Debit) - prompt user for the debit information and save it to the csv file
@@ -70,9 +68,9 @@ public class Screens {
         }
 
         try {
-            FileWriter writer = new FileWriter("transactions.csv");
+            FileWriter writer = new FileWriter("transactions.csv", true);
             writer.write(newDebit.getDate().toString() + "," + newDebit.getTime().toString() + "," + description + "," + vendor + "," + amount + ",");
-            String line = String.format("date: %s, time: %s, description: %s, vendor: %s, amount: %.2f", newDebit.getDate(), newDebit.getTime(), newDebit.description, newDebit.vendor, newDebit.amount);
+            String line = String.format("/n,date: %s, time: %s, description: %s, vendor: %s, amount: %.2f", newDebit.getDate(), newDebit.getTime(), newDebit.description, newDebit.vendor, newDebit.amount);
             writer.close();
 
         } catch (IOException e) {
