@@ -10,20 +10,17 @@ public class AccountingLedgerApp {
             Screens.homeScreen();
         }
 
+        public void ledger() {
+            Scanner input = new Scanner(System.in);
+
+            System.out.println("Welcome to your account Ledger.");
 
 
     }
 }
 
-      /*  public static String ledger(){
+      /*
 
-        Scanner input = new Scanner(System.in);
-
-        boolean appRunning = true;
-
-        while(appRunning) {
-
-            String ledgerChoice =
 
             switch(ledgerChoice) {
                 case

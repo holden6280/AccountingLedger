@@ -2,8 +2,6 @@ package org.yup.accountingledger;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
-import java.time.LocalDate;
-import java.time.LocalTime;
 public class Screens {
     public static void homeScreen() {
         Scanner input = new Scanner(System.in);
@@ -36,13 +34,6 @@ public class Screens {
                 System.out.println("That is not an acceptable selection. Please try again.");
 
         }
-        //The home screen should give the user the following options. The application should continue to run until the user chooses to exit.
-        // D) Add Deposit - prompt user for the deposit information and save it to the csv file
-        // P) Make Payment (Debit) - prompt user for the debit information and save it to the csv file
-        // L) Ledger - display the ledger screen
-        // X) Exit - exit the application
-
-        //this should contain a system.in switch statement
     }
 
     public static void addTransaction(boolean isDebit) {
