@@ -33,21 +33,6 @@ public class Transaction {
 
     }
 
-    public void addCredit() {
-
-        Scanner input = new Scanner(System.in);
-        System.out.println("Note");
-        this.description = input.nextLine();
-
-        System.out.println("Payer Name");
-        this.vendor = input.nextLine();
-
-        System.out.println("Amount in");
-        this.amount = input.nextFloat();
-
-        new Transaction(description, vendor, amount);
-
-    }
 
     //Getters and Setters
     public LocalDate getDate() {
