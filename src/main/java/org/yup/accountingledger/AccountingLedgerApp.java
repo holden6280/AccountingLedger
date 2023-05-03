@@ -6,27 +6,11 @@ public class AccountingLedgerApp {
 
         boolean appRunning = true;
 
-        while (appRunning = true){
             Screens.homeScreen();
-        }
-
-        public void ledger() {
-            Scanner input = new Scanner(System.in);
-
-            System.out.println("Welcome to your account Ledger.");
 
 
     }
 }
-
-      /*
-
-
-            switch(ledgerChoice) {
-                case
-            }}
-        */
-
         //Ledger - All entries should show the newest entries first
         // A) All - Display all entries
         // D) Deposits - Display only the entries that are deposits into the account
