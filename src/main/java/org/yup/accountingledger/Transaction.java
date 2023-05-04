@@ -1,15 +1,14 @@
 package org.yup.accountingledger;
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.Scanner;
 
 public class Transaction {
         public LocalDate date;
         public LocalTime time;
         public String description;
         public String vendor;
-        public float amount;
-        public Transaction(String description, String vendor, float amount){
+        public double amount;
+        public Transaction(String description, String vendor, double amount){
             this.date = LocalDate.now();
             this.time = LocalTime.now();
             this.description = description;
@@ -44,9 +43,10 @@ public class Transaction {
     public void setVendor(String vendor) {
         this.vendor = vendor;
     }
-    public float getAmount() {
+    public double getAmount() {
         return amount;
     }
-    public void setAmount(int amount) {
+    public void setAmount(double amount) {
         this.amount = amount;
-    }}
+    }
+}

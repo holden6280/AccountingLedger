@@ -8,14 +8,14 @@ public class Screens {
         while (appRunning) {
             Scanner input = new Scanner(System.in);
 
-            System.out.println("Welcome to your account Ledger.");
-            System.out.println("Enter D to record a deposit");
-            System.out.println("Enter P to record a payment");
-            System.out.println("Enter L to view the ledger");
-            System.out.println("Enter X to exit");
+            System.out.println("Welcome to LedgerPro Basic");
+            System.out.println("Enter D to QuikRecord a deposit");
+            System.out.println("Enter P to QuikRecord a payment");
+            System.out.println("Enter L to enter your personal ledger");
+            System.out.println("Enter X to close LedgerPro Basic");
             System.out.println("Please enter your selection:");
 
-            switch (input.nextLine()) {
+            switch (input.nextLine().toUpperCase()) {
                 case "D":
                     addTransaction(false);
                     break;
@@ -26,6 +26,7 @@ public class Screens {
 
                 case "L":
                     //opens the ledger app
+                    Ledger.ledger();
                     break;
 
                 case "X":
@@ -43,16 +44,16 @@ public class Screens {
             Scanner input = new Scanner(System.in);
             String description;
             String vendor;
-            float amount;
+            double amount;
 
-            System.out.println("Give me a desc");
+            System.out.println("Memo:");
             description = input.nextLine();
 
-            System.out.println("vendor");
+            System.out.println("Guarantor");
             vendor = input.nextLine();
 
-            System.out.println("amount");
-            amount = input.nextFloat();
+            System.out.println("Amount");
+            amount = input.nextDouble();
 
             Transaction nL = new Transaction(description, vendor, amount);
 
