@@ -25,7 +25,6 @@ public class Screens {
                     break;
 
                 case "L":
-                    //opens the ledger app
                     Ledger.ledger();
                     break;
 
@@ -46,7 +45,7 @@ public class Screens {
             String vendor;
             double amount;
 
-            System.out.println("Memo:");
+            System.out.println("Memo");
             description = input.nextLine();
 
             System.out.println("Guarantor");
@@ -63,7 +62,7 @@ public class Screens {
 
             try {
                 FileWriter writer = new FileWriter("transactions.csv", true);
-                String line = String.format("%s|%s|%s|%s|%.2f %n", nL.getDate(), nL.getTime(), nL.description, nL.vendor, nL.amount);
+                String line = String.format("%s|%s|%s|%s|%.2f \n", nL.getDate(), nL.getTime(), nL.description, nL.vendor, nL.amount);
                 writer.write(line);
                 writer.close();
 

@@ -9,7 +9,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/org/yup/accountingledger/AccountingLedgerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yup/accountingledger/AccountingLedgerApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/yup/accountingledger/Ledger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yup/accountingledger/Ledger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/yup/accountingledger/Screens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yup/accountingledger/Screens.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/yup/accountingledger/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/yup/accountingledger/Transaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transactions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/transactions.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -167,5 +166,15 @@
     <MESSAGE value="Monday afternoon commit" />
     <MESSAGE value="Monday afternoon commit 2" />
     <option name="LAST_COMMIT_MESSAGE" value="Monday afternoon commit 2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
